@@ -67,7 +67,7 @@ what is the difference between
 
 if x % 2 == 0:
     print(f"{x} is divisible by 2")
-elif % 5 == 0:
+elif x % 5 == 0:
     print(f"{x} is divisible by 5")
     
     
@@ -78,5 +78,10 @@ if x % 5 == 0:
     
 """
 be careful because if one condition suceeds then all conditions below will not run
+
+There are times wherer you want to exaluate more than opne conditional
+<condition> AND <other condition> 
+
+how do in python?
 
 """
