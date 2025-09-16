@@ -16,11 +16,11 @@ print("3. Junior")
 print("4. Senior")
 option = input("Enter your grade level ")
 
-if option == "Freshman":
+if option == "Freshman" or "freshman":
     print("you get 5 dollars!")
-if option == "Sohomore":
+if option == "Sohomore" or "sophomore":
     print("you get 7 dollars!")
-if option == "Junior":
+if option == "Junior" or "junior":
     print("you get 9 dollars!")
-if option == "Senior":
+if option == "Senior" or "senior":
     print("you get 11 dollars!")
