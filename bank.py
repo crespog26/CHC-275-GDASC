@@ -39,14 +39,14 @@ top tip for admin
 """
 
 
-bank1 = ["Mitch Schauer", "Gabby Crespo", "Colin Lawton", "Paul Gage", "Asher Collins"]
-bank2 = [10000, 15000, 20000, 30000, 1000]
+bank1 = ["Mitch Schauer", "Gabby Crespo", "Colin Lawton", "Paul Gage", "Asher Collins"] #these are the "account holders", this list is where the names are stored. Important because this list is of what the "user" inputs 
+bank2 = [10000, 15000, 20000, 30000, 1000] #these are the respective values for each account. this list is where each of the money values of the accounts are stored and the list that will be changed depending on which option the user chooses.
 print("Welcome to First Financial Credit Union!")
 
 check = False
-while check == False:
-    for i in range(len(bank1)):
-        print(f"Account holder: '{bank1[i]}' Account balance: '{bank2[i]}'")
+while check == False: #this while loop is used to loop the program :)
+    for i in range(len(bank1)): 
+        print(f"Account holder: '{bank1[i]}' Account balance: '{bank2[i]}'") #this prints both lists every time one of the options is completed at the start of every loop
     print("1. Add Account")
     print("2. Remove Account")
     print("3. Make a Deposit")
@@ -54,16 +54,16 @@ while check == False:
     print("5. Transfer Funds")
     option = input("Select your option or quit to exit: ")
     if option == "1":
-        name = input("Add account: ")
-        bank1.append(name) 
-        bal = input("How much money is in your account? ")
-        bal = int(bal)
-        bank2.append(bal)
+        name = input("Add account: ") #this creates the variable for the name that will be added to bank1
+        bank1.append(name) #this is it actually being added
+        bal = input("How much money is in your account? ") #asking for the value of the varible that is going to be added to bank2
+        bal = int(bal) #typecasting bal to be an integer
+        bank2.append(bal) #adding the new variable to the list
     elif option == "2":
-        name = input("Remove account: ")
-        index = bank1.append(name)
-        bank1.pop(index)
-        bank2.pop(index)
+        name = input("Remove account: ") #user inputs one of the names form the list to sekect it
+        index = bank1.index(name)
+        bank1.pop(index) #this deletes the corresponding part of the list from bank1!
+        bank2.pop #same as above, but for bank2
     elif option == "3":
         name = input("Which account is depostiing? ")
         index = bank1.index(name)
