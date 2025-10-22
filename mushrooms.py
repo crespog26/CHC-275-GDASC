@@ -1,6 +1,3 @@
-"""
-ewqfwe4floikwefiopwenm owe ng 
-"""
 
 small = []
 medium = []
@@ -14,11 +11,11 @@ while check == False:
     if option.isnumeric():
         option = int(option)
         if option < 100:
-            small = small.append(option)
+            small.append(option)
         elif option >= 100 and option <= 200:
-            medium = medium.append(option)
+            medium.append(option)
         elif option > 200:
-            large = large.append(option)
+            large.append(option)
         print(small)
         print(medium)
         print(large)
