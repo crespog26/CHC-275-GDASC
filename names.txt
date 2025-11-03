@@ -1,5 +1,5 @@
-pumpkin
-raspberry
-apple
-cheese
-melon
+raspberry,92
+apple,90
+cheese,67
+pumpkin,90
+melon,30
