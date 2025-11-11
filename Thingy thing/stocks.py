@@ -1,24 +1,16 @@
 
 
-file = open("day.txt","r") #open("<filename>","<mode>") 
+file = open("day.txt","r")
 
 buffer = file.readlines() 
-names = [] 
-grades = [] 
-print(buffer) 
-file.close() 
-for line in buffer: 
-    line = line.strip()
-    line = line.split(",") 
-    names.append(line[0])
-    grades.append(line[1])
-    
-
-try:
-    for i in range(len(grades)):
-        grades[i] = int(grades[i])
-except ValueError:
-    print("grade must be a number")
-
-print(names)
-print(grades)
+file.close()
+print(buffer)
+print(buffer[0])
+print(buffer[1])
+print(buffer[2])
+msft = buffer.strip().split(",")
+msft.pop(0)
+amzn = buffer.strip().split(",")
+amzn.pop()
+nvda = buffer.strip().split(",")
+nvda.pop()
