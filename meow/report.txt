@@ -1,0 +1,15 @@
+STOCK REPORT
+MSFT:
+First 20 days: 397.85
+Next 20 days:395.6
+
+AMZN:
+First 20 days: 399.45
+Next 20 days:400.4
+Higher in days 21-40
+
+NVDA:
+First 20 days: 390.75
+Next 20 days:396.2
+Higher in days 21-40
+
