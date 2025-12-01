@@ -15,7 +15,7 @@ for line in buffer:
     items.append(line[0])
     prices.append(line[1])
 
-
+cart = []
 
 check = False
 while check == False: 
@@ -26,7 +26,7 @@ while check == False:
     if option == "1":
         print(items)
         print(prices)
-        cart = input("enter the item you wish to purchase: ")
+        wenk = input("enter the item you wish to purchase: ")
     elif option == "2":
         print(items)
         print(prices)
