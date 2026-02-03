@@ -23,5 +23,17 @@ def add(x,y):
 
 add(6,7) 
 
+"""
+when we do that it replaces 6,7 for x and y
+they are called arguments
 
+variables not tasked in as a parameter are going to be inaccessible
+
+
+"""
+def transaction(x):
+    tax = x * 0.06
+    print(x - tax)
+
+transaction(100)
 
