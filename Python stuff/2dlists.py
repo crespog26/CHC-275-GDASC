@@ -302,3 +302,16 @@ board3 = [
 checkWinner(board1,"O")
 checkWinner(board2,"O")
 checkWinner(board3,"O")
+
+#tie
+#no empty spaces left
+#the only reason why we return a value is to signal the game that we have finished playing
+#if there's a tie, return true. if all else fails, return false, game continues
+
+check = False
+for row in board:
+    for space in row:
+        if space == 0:
+            return check
+        
+return True
